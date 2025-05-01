@@ -1,4 +1,4 @@
-# ToDo List DApp
+# ToDo List DApp with Reward System
 A todo list powered by Ethereum smart contracts. User can optionally deposit prize for each task which will get it back in his prize account or will be punished by not being able to withdraw the prize back to his account during the punishment period.
 
 ## Contents
@@ -11,11 +11,11 @@ A todo list powered by Ethereum smart contracts. User can optionally deposit pri
 
 ## Installation
 0. Install required packages.
-```
+```bash
 npm install -g ganache-cli truffle
 ```
 1. Run a `ganache-cli` service.
-```
+```bash
 ganache-cli
 ## Or fill out .env file parameters for deploying contract on Rinkeby testnet
 # cp sample.env .env
@@ -25,7 +25,7 @@ ganache-cli
 # ganache-cli --mnemonic "$MNEMONIC"
 ```
 2. Navigate to `blockchain` directory and type below command and enter.
-```
+```bash
 cd blockchain
 npm install
 truffle migrate --reset --compile-all --network development
@@ -33,7 +33,7 @@ truffle migrate --reset --compile-all --network development
 # truffle migrate --reset --compile-all --network rinkeby
 ```
 3. Then navigate to `client` directory to enter below commands.
-```
+```bash
 cd ../client
 npm install
 npm run serve
